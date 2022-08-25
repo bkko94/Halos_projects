@@ -1,0 +1,40 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+}
+
+group = 'com.mysite'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web:2.7.2'){
+		//종속성 제외 추가
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+	}
+	testImplementation('org.springframework.boot:spring-boot-starter-test:2.7.2'){
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	implementation 'org.springframework.boot:spring-boot-starter-undertow:2.7.2'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.7.2'
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+	//runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	implementation group : 'org.mariadb.jdbc', name : 'mariadb-java-client', version : '2.7.4'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.2'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.7.2'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.3'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+	implementation 'org.commonmark:commonmark:0.18.2'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
