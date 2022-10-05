@@ -20,7 +20,7 @@
                     <a class="nav-link" sec:authorize="hasAnyRole('ADMIN', 'MANAGER')" href="#">로그확인</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" sec:authorize="hasAnyRole('MANAGER','USER')" th:href="@{/user/modify_pwd}">비밀번호 변경</a>
+                    <a class="nav-link" sec:authorize="hasAnyRole('MANAGER','USER')" th:href="@{/user/modify}">비밀번호 변경</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" sec:authorize="hasRole('ADMIN')" th:href="@{/user/list}">회원관리</a>

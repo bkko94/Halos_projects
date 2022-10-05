@@ -163,9 +163,6 @@ backdrop-filter: blur(10px);
     top:150px;
     right:150px;
     -webkit-animation: myOrbit 8s linear infinite; /* Chrome, Safari 5 */
-         /*  -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
-         /*    -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
-         /*       animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
 
 }
 
@@ -173,21 +170,7 @@ backdrop-filter: blur(10px);
     from { -webkit-transform: rotate(0deg) translateX(250px) rotate(360deg); }
     to   { -webkit-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
 }
-/*
-@-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
 
-@-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
-
-@keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}*/
 
 
 .form-area{
@@ -216,14 +199,14 @@ backdrop-filter: blur(10px);
  background-color: rgba(255,255,255,0.4);
 }
 
+
+
+
 /*  회원가입  */
 
 
 .signupbg{
-/*
-background: #673AB7;  /* fallback for old browsers */
-/*background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
-/*background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 background-image: url('/image/회원가입.jpg');
 background-size: cover;
 background-position: center;
@@ -341,4 +324,13 @@ padding-top:50px;
             right:0;
             top:0;
             bottom:0;
+}
+
+.display-1{
+    color: white;
+}
+
+.useruser{
+    color:white;
+   margin:auto;
 }

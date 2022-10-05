@@ -17,6 +17,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.security.Principal;
 import java.util.Optional;
@@ -28,6 +29,9 @@ import java.util.Optional;
 public class UserController {
    @Autowired
    PasswordEncoder passwordEncoder;
+
+ //   @Autowired
+ //  private final RequestService requestService;
 
     private final UserService userService;
 
@@ -83,7 +87,10 @@ public class UserController {
     @GetMapping("/main")
     public String main(Model model, Principal principal) {
 
+
+
         model.addAttribute("user", principal.getName());
+    //   log.info("접속자 IP:{}", requestService.getClientIp(request));
         return "main_page";
     }
 
@@ -92,17 +99,14 @@ public class UserController {
 
     @GetMapping("/modify")
     public String userModify(Model model, @Valid personalModifyForm modifyForm, Principal principal, SiteUser siteUser) {
-      //  modifyForm.setNewpassword1(siteUser.getPassword());
-      //  personalModifyForm.setEmail(siteUser.getEmail());
-        System.out.println(modifyForm.getNewpassword1());
-        System.out.println(siteUser.getPassword());
+
         model.addAttribute("user", principal.getName());
         return "pwd_modify_form";
     }
 
 
 
-    /*@PreAuthorize("hasRole('ADMIN')")*/
+    @PreAuthorize("isAuthenticated()")
     @PostMapping("/modify")
     public String userModify(Model model, @Valid personalModifyForm modifyForm, BindingResult bindingResult,
                              Principal principal, SiteUser siteUser) {

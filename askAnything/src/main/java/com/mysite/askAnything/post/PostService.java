@@ -3,6 +3,8 @@ package com.mysite.askAnything.post;
 import com.mysite.askAnything.DataNotFoundException;
 import com.mysite.askAnything.comment.Comment;
 import com.mysite.askAnything.user.SiteUser;
+import com.mysite.askAnything.user.UserRepository;
+import com.mysite.askAnything.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -23,6 +25,7 @@ public class PostService {
 
     private final PostRepository postRepository;
 
+
     public List<Post> getList(){
         return this.postRepository.findAll();
     }
@@ -36,12 +39,17 @@ public class PostService {
         }
     }
 
-    public void create(String subject, String content, SiteUser user){
+    public void create(String subject, String content, SiteUser author){
+
         Post p = new Post();
+
         p.setSubject(subject);
         p.setContent(content);
         p.setCreateDate(LocalDateTime.now());
-        p.setAuthor(user);
+        p.setAuthor(author);
+        System.out.println(author);
+        System.out.println(subject);
+
         this.postRepository.save(p);
     }
 

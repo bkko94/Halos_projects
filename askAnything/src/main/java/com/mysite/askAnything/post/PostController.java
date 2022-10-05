@@ -53,7 +53,9 @@ public class PostController {
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/create")
-    public String postCreate(PostForm postForm){
+    public String postCreate(PostForm postForm , Model model, Principal principal){
+
+        model.addAttribute("user", principal.getName());
         return "post_form";
     }
 
