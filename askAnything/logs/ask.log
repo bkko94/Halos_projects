@@ -1,0 +1,279 @@
+2022-10-05 21:00:24.223  INFO 17507 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Starting AskAnythingApplication using Java 11.0.15.1 on Bokyungui-MacBookPro.local with PID 17507 (/Users/bokyung/projects/askAnything/build/classes/java/main started by bokyung in /Users/bokyung/projects/askAnything)
+2022-10-05 21:00:24.227  INFO 17507 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-05 21:00:25.887  INFO 17507 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 21:00:25.888  INFO 17507 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 21:00:26.889  INFO 17507 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 21:00:26.964  INFO 17507 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2022-10-05 21:00:27.710  WARN 17507 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-10-05 21:00:27.777  INFO 17507 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-10-05 21:00:27.778  INFO 17507 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2022-10-05 21:00:27.977  INFO 17507 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 21:00:28.003  INFO 17507 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-05 21:00:28.089  INFO 17507 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-05 21:00:28.141  INFO 17507 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-05 21:00:28.198  INFO 17507 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-05 21:00:28.210  INFO 17507 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-10-05 21:00:28.739  INFO 17507 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 21:00:28.749  INFO 17507 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:00:29.621  INFO 17507 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4de62de1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4db541d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3940cb27, org.springframework.security.web.header.HeaderWriterFilter@7b2f36e5, org.springframework.security.web.csrf.CsrfFilter@cac6a78, org.springframework.security.web.authentication.logout.LogoutFilter@17ae3224, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24c469af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68412436, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1afa2e76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@778cb08c, org.springframework.security.web.session.SessionManagementFilter@29bb9292, org.springframework.security.web.access.ExceptionTranslationFilter@6cbd9571, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75868fcc]
+2022-10-05 21:00:29.701  WARN 17507 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 21:00:30.231  INFO 17507 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 21:00:30.272  INFO 17507 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.19.Final
+2022-10-05 21:00:30.277  INFO 17507 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2022-10-05 21:00:30.282  INFO 17507 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-10-05 21:00:30.361  INFO 17507 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-10-05 21:00:30.408  INFO 17507 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8082 (http)
+2022-10-05 21:00:30.423  INFO 17507 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Started AskAnythingApplication in 6.84 seconds (JVM running for 7.411)
+2022-10-05 21:01:23.017  INFO 17507 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 21:01:23.019  INFO 17507 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 21:01:23.021  INFO 17507 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-05 21:01:23.101 ERROR 17507 --- [XNIO-1 task-1] io.undertow.request                      : UT005023: Exception handling request to /user/main
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.22.jar:5.3.22]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100) ~[undertow-servlet-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852) ~[undertow-core-2.2.19.Final.jar:2.2.19.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1423) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282) ~[xnio-api-3.8.7.Final.jar:3.8.7.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at com.mysite.askAnything.user.UserController.main(UserController.java:92) ~[main/:na]
+	at com.mysite.askAnything.user.UserController$$FastClassBySpringCGLIB$$24442229.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
+	at com.mysite.askAnything.user.UserController$$EnhancerBySpringCGLIB$$fe99b9cc.main(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	... 100 common frames omitted
+
+2022-10-05 21:01:40.537  INFO 17507 --- [XNIO-1 task-4] c.m.a.user.UserSecurityService           : 사용자 test333님이 로그인하였습니다.
+2022-10-05 21:01:44.401  INFO 17507 --- [XNIO-1 task-5] c.m.askAnything.post.PostController      : 사용자 [test333], 게시판 0 페이지 열람
+2022-10-05 21:01:44.401  INFO 17507 --- [XNIO-1 task-5] c.m.askAnything.post.PostController      : 키워드 '' 검색
+2022-10-05 21:03:02.280  INFO 17507 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.19.Final
+2022-10-05 21:03:02.290  INFO 17507 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-05 21:03:02.307  INFO 17507 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:03:02.311  INFO 17507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-05 21:03:02.318  INFO 17507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-05 21:03:17.873  INFO 17587 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Starting AskAnythingApplication using Java 11.0.15.1 on Bokyungui-MacBookPro.local with PID 17587 (/Users/bokyung/projects/askAnything/build/classes/java/main started by bokyung in /Users/bokyung/projects/askAnything)
+2022-10-05 21:03:17.877  INFO 17587 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-05 21:03:19.752  INFO 17587 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 21:03:19.752  INFO 17587 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 21:03:20.655  INFO 17587 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 21:03:20.725  INFO 17587 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2022-10-05 21:03:21.461  WARN 17587 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-10-05 21:03:21.516  INFO 17587 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-10-05 21:03:21.517  INFO 17587 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1764 ms
+2022-10-05 21:03:21.704  INFO 17587 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 21:03:21.732  INFO 17587 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-05 21:03:21.821  INFO 17587 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-05 21:03:21.871  INFO 17587 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-05 21:03:21.924  INFO 17587 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-05 21:03:21.934  INFO 17587 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-10-05 21:03:22.435  INFO 17587 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 21:03:22.441  INFO 17587 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:03:23.310  INFO 17587 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5117169, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@737d0316, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dbf4156, org.springframework.security.web.header.HeaderWriterFilter@6aa16edc, org.springframework.security.web.csrf.CsrfFilter@5e22f786, org.springframework.security.web.authentication.logout.LogoutFilter@495f6bcf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46154546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32494c14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31268f84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14363e2, org.springframework.security.web.session.SessionManagementFilter@3a94a8cc, org.springframework.security.web.access.ExceptionTranslationFilter@2e46c735, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fcf6702]
+2022-10-05 21:03:23.374  WARN 17587 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 21:03:23.820  INFO 17587 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 21:03:23.864  INFO 17587 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.19.Final
+2022-10-05 21:03:23.868  INFO 17587 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2022-10-05 21:03:23.873  INFO 17587 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-10-05 21:03:23.948  INFO 17587 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-10-05 21:03:23.988  INFO 17587 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8082 (http)
+2022-10-05 21:03:23.999  INFO 17587 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Started AskAnythingApplication in 6.705 seconds (JVM running for 7.305)
+2022-10-05 21:03:51.721  INFO 17587 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 21:03:51.723  INFO 17587 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 21:03:51.726  INFO 17587 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-05 21:03:58.975  INFO 17587 --- [XNIO-1 task-4] c.m.a.user.UserSecurityService           : 사용자 test333님이 로그인하였습니다.
+2022-10-05 21:04:01.459  INFO 17587 --- [XNIO-1 task-2] c.m.askAnything.post.PostController      : 사용자 [test333], 게시판 0 페이지 열람
+2022-10-05 21:04:01.459  INFO 17587 --- [XNIO-1 task-2] c.m.askAnything.post.PostController      : 키워드 '' 검색
+2022-10-05 21:19:16.369  INFO 17587 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.19.Final
+2022-10-05 21:19:16.386  INFO 17587 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-05 21:19:16.404  INFO 17587 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:19:16.411  INFO 17587 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-05 21:19:16.418  INFO 17587 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-05 21:19:19.852  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Starting AskAnythingApplication using Java 11.0.15.1 on Bokyungui-MacBookPro.local with PID 17896 (/Users/bokyung/projects/askAnything/build/classes/java/main started by bokyung in /Users/bokyung/projects/askAnything)
+2022-10-05 21:19:19.855  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-05 21:19:21.800  INFO 17896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 21:19:21.800  INFO 17896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 21:19:22.712  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 21:19:22.785  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2022-10-05 21:19:23.496  WARN 17896 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-10-05 21:19:23.546  INFO 17896 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-10-05 21:19:23.547  INFO 17896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1746 ms
+2022-10-05 21:19:23.731  INFO 17896 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 21:19:23.758  INFO 17896 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-05 21:19:23.840  INFO 17896 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-05 21:19:23.887  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-05 21:19:23.939  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-05 21:19:23.951  INFO 17896 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-10-05 21:19:24.430  INFO 17896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 21:19:24.434  INFO 17896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:19:25.169  INFO 17896 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cda5c90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1973179e, org.springframework.security.web.context.SecurityContextPersistenceFilter@21d0a24, org.springframework.security.web.header.HeaderWriterFilter@7dd5a586, org.springframework.security.web.csrf.CsrfFilter@7e675795, org.springframework.security.web.authentication.logout.LogoutFilter@6ed88608, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c55fbe8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25d6aec3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38254042, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d7f2fee, org.springframework.security.web.session.SessionManagementFilter@732a4a78, org.springframework.security.web.access.ExceptionTranslationFilter@ee48527, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@437e2935]
+2022-10-05 21:19:25.235  WARN 17896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 21:19:25.699  INFO 17896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 21:19:25.751  INFO 17896 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.19.Final
+2022-10-05 21:19:25.756  INFO 17896 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2022-10-05 21:19:25.762  INFO 17896 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-10-05 21:19:25.860  INFO 17896 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-10-05 21:19:25.904  INFO 17896 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8082 (http)
+2022-10-05 21:19:25.917  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Started AskAnythingApplication in 6.628 seconds (JVM running for 7.182)
+2022-10-05 21:20:52.259  INFO 17896 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 21:20:52.260  INFO 17896 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 21:20:52.262  INFO 17896 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-05 21:23:24.033  INFO 17896 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.19.Final
+2022-10-05 21:23:24.058  INFO 17896 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-05 21:23:24.071  INFO 17896 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:23:24.075  INFO 17896 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-05 21:23:24.084  INFO 17896 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-05 21:23:24.415  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Starting AskAnythingApplication using Java 11.0.15.1 on Bokyungui-MacBookPro.local with PID 17896 (/Users/bokyung/projects/askAnything/build/classes/java/main started by bokyung in /Users/bokyung/projects/askAnything)
+2022-10-05 21:23:24.422  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-05 21:23:24.733  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 21:23:24.758  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+2022-10-05 21:23:24.986  WARN 17896 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-10-05 21:23:24.989  INFO 17896 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-10-05 21:23:24.989  INFO 17896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 557 ms
+2022-10-05 21:23:25.048  INFO 17896 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 21:23:25.055  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-10-05 21:23:25.063  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-10-05 21:23:25.079  INFO 17896 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-10-05 21:23:25.257  INFO 17896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 21:23:25.258  INFO 17896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:23:25.580  INFO 17896 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@470fc831, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3848b594, org.springframework.security.web.context.SecurityContextPersistenceFilter@72222d5c, org.springframework.security.web.header.HeaderWriterFilter@38228cac, org.springframework.security.web.csrf.CsrfFilter@25005787, org.springframework.security.web.authentication.logout.LogoutFilter@315ec355, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66542bdb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@641d97a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4876206b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d253c8b, org.springframework.security.web.session.SessionManagementFilter@55b9e403, org.springframework.security.web.access.ExceptionTranslationFilter@1500653d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73fac650]
+2022-10-05 21:23:25.633  WARN 17896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 21:23:25.824  INFO 17896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 21:23:25.836  INFO 17896 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.19.Final
+2022-10-05 21:23:25.844  INFO 17896 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8082 (http)
+2022-10-05 21:23:25.853  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Started AskAnythingApplication in 1.607 seconds (JVM running for 247.122)
+2022-10-05 21:23:25.862  INFO 17896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-05 21:23:27.242  INFO 17896 --- [Thread-7] io.undertow                              : stopping server: Undertow - 2.2.19.Final
+2022-10-05 21:23:27.259  INFO 17896 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:23:27.262  INFO 17896 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-10-05 21:23:27.279  INFO 17896 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-10-05 21:23:27.481  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Starting AskAnythingApplication using Java 11.0.15.1 on Bokyungui-MacBookPro.local with PID 17896 (/Users/bokyung/projects/askAnything/build/classes/java/main started by bokyung in /Users/bokyung/projects/askAnything)
+2022-10-05 21:23:27.483  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-05 21:23:27.712  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 21:23:27.740  INFO 17896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2022-10-05 21:23:27.940  WARN 17896 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-10-05 21:23:27.941  INFO 17896 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-10-05 21:23:27.941  INFO 17896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 450 ms
+2022-10-05 21:23:27.987  INFO 17896 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 21:23:27.994  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-10-05 21:23:28.000  INFO 17896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-10-05 21:23:28.001  INFO 17896 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-10-05 21:23:28.170  INFO 17896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 21:23:28.170  INFO 17896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 21:23:28.522  INFO 17896 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14079a22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47a4969c, org.springframework.security.web.context.SecurityContextPersistenceFilter@72238654, org.springframework.security.web.header.HeaderWriterFilter@5763c3ec, org.springframework.security.web.csrf.CsrfFilter@52312ce0, org.springframework.security.web.authentication.logout.LogoutFilter@30ee6259, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e96f6bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4919faac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ac2cc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75ac31b, org.springframework.security.web.session.SessionManagementFilter@29aee9ad, org.springframework.security.web.access.ExceptionTranslationFilter@435f0bcf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5722f380]
+2022-10-05 21:23:28.555  WARN 17896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 21:23:28.742  INFO 17896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 21:23:28.754  INFO 17896 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.19.Final
+2022-10-05 21:23:28.770  INFO 17896 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8082 (http)
+2022-10-05 21:23:28.774  INFO 17896 --- [restartedMain] c.m.askAnything.AskAnythingApplication   : Started AskAnythingApplication in 1.39 seconds (JVM running for 250.043)
+2022-10-05 21:23:28.777  INFO 17896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

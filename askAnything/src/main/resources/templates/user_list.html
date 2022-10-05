@@ -1,0 +1,74 @@
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.w3.org/1999/xhtml" layout:decorate="~{layout}">
+<div layout:fragment="content" class="container-fluid tablebg">
+
+    <div class="container">
+        <table class="table postbg">
+            <thead class="table-dark table-hover text-center">
+                <tr>
+                    <th>선택</th>
+                    <th>번호</th>
+                    <th>회원이름</th>
+                    <th>이메일</th>
+                    <th>가입날짜</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center" th:each="user, loop: ${paging}">
+                    <td></td>
+                    <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
+                    <td class="text-start">
+                        <a class="subject" th:text="${user.username}" th:href="@{|/admin/modify/${user.id}|}"></a>
+                    </td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${#temporals.format(user.createDate, 'yyyy-MM-dd HH:mm')}"></td>
+                    <td><a href="javascript:void(0);" th:data-uri="@{|/admin/delete/${user.id}|}"
+                           class="delete btn btn-sm btn-outline-secondary"  sec:authorize="hasRole('ADMIN')"
+                           th:text="삭제"></a></td>
+            </tbody>
+        </table>
+        <!-- 페이징 처리 시작 -->
+        <p></p>
+        <div th:if="${!paging.isEmpty()}">
+            <ul class="pagination justify-content-center">
+                <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+                    <a class="page-link" th:href="@{|?page=${paging.number-1}|}">
+                        <span>이전</span>
+                    </a>
+                </li>
+                <li th:each="page: ${#numbers.sequence(0, paging.totalPages-1)}"
+                    th:if="${page >= paging.number-5 and page <= paging.number+5}"
+                    th:classappend="${page == paging.number} ? 'active'" class="page-item">
+                    <a th:text="${page}" class="page-link" th:href="@{|?page=${page}|}"></a>
+                </li>
+                <li class="page-item" th:classappend="${!paging.hasNext} ? 'disabled'">
+                    <a class="page-link" th:href="@{|?page=${paging.number+1}|}">
+                        <span>다음</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--페이징 처리 끝-->
+    </div>
+</div>
+<script layout:fragment="script" type='text/javascript'>
+const page_elements = document.getElementsByClassName("page-link");
+Array.from(page_elements).forEach(function(element) {
+element.addEventListener('click', function() {
+document.getElementById('page').value = this.dataset.page;
+document.getElementById('searchForm').submit();
+});
+});
+
+
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element){
+    element.addEventListener('click', function(){
+         if(confirm("정말로 삭제하시겠습니까?")){
+            location.href = this.dataset.uri;
+         };
+    });
+});
+
+</script>

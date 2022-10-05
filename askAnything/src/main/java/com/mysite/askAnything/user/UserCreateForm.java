@@ -20,10 +20,12 @@ public class UserCreateForm {
     @NotEmpty(message="사용자 ID는 필수항목입니다.")
     private String username;
 
-   @Pattern(regexp = "(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\\W),(?=\\S+$).{8,16}",
+
+    /*에러나서 확인요망*/
+  /* @Pattern(regexp = "(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\\W),(?=\\S+$).{8,16}",
            message = "비밀번호는 8~16자 영문 대소문자, 숫자, 특수문자를 포함하여 입력하세요")
-    /*  @Pattern(regexp = "(?=.*[0-9])(?=.*[a-zA-Z])", message = "비밀번호는 숫자, 8~16자 영문대소문자 입력하세요")
-    @Pattern(regexp = "(?=.*\\W),(?=\\S+$).{8,16}", message= "특수문자포함하세요")*/
+*/
+
     @NotEmpty(message="비밀번호는 필수항목입니다.")
     private String password1;
 

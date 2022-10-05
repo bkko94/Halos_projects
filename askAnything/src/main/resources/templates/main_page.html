@@ -1,0 +1,72 @@
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.w3.org/1999/xhtml" layout:decorate="~{layout}">
+
+<body>
+<style>
+
+</style>
+<div layout:fragment="content" class="container-fluid mainbody">
+    <div class="container">
+        <div class="row" id="mainbg">
+            <div class="col md-7 bgmain">
+                <div class="menubg">
+                    <span class="p-5"></span>
+                    <div class="admingreet" sec:authorize="isAuthenticated()">
+                        <div th:text="|안녕하세요, ${user}님!|"></div>
+                        <span class="display-3">오늘도 좋은 하루 보내세요.</span>
+                    </div>
+                    <div class="row menus text-center">
+
+
+                        <div class="col menu-1" sec:authorize="isAuthenticated()">
+                            <a th:href="@{/post/list}">
+                                <img src="/image/write.png" width="100px" height="100px">
+                                <h3>게시판</h3>
+                            </a>
+                        </div>
+
+                        <div class="col menu-1" sec:authorize="hasAnyRole('ADMIN','MANAGER')">
+                            <a href="#">
+                                 <img src="/image/log.png" width="100px" height="100px">
+                                 <h3>로그확인</h3>
+                            </a>
+                        </div>
+
+                        <div class="col menu-1" sec:authorize="hasAnyRole('MANAGER','USER')">
+                            <a th:href="@{/user/modify}">
+                                 <img src="/image/pwd.png" width="100px" height="100px">
+                                 <h3>패스워드변경</h3>
+                            </a>
+                         </div>
+
+                        <div class="col menu-1" sec:authorize="hasRole('ADMIN')">
+                            <a th:href="@{/admin/list}">
+                             <img src="/image/settings.png" width="100px" height="100px">
+                             <h3>회원관리</h3>
+                            </a>
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col md-5 laptop text-center" id="rightbg">
+                <img src="/image/main2.png" width="450px;" height="450px;">
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
