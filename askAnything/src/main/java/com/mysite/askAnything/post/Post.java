@@ -16,8 +16,6 @@ import java.util.List;
 @Table(name="Post")
 public class Post {
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -33,8 +31,9 @@ public class Post {
     @OneToMany(mappedBy = "post", cascade = CascadeType.REMOVE)
     private List<Comment> commentList;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     private SiteUser author;
 
     private LocalDateTime modifyDate;
+
 }

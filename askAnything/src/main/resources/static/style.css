@@ -1,0 +1,344 @@
+@font-face{
+    font-family:NeoDunggeunmo;
+    src:url('/NeoDunggeunmoPro-Regular.woff') format('woff');
+}
+
+body{
+    font-family:NeoDunggeunmo;
+}
+
+#login{
+    border-radius: 20px;
+    }
+
+#logout{
+    border-radius: 20px;
+}
+.loginout{
+    float: left;
+}
+
+.login_area{
+    margin-top:30px;
+
+}
+
+
+.loginbg{
+/*background: linear-gradient(to right, #0083B0, #00B4DB);*/
+background-image: url('/image/로그인1.jpg');
+background-size: cover;
+background-position: center;
+height:750px;
+}
+.mainbody{
+background-image: url('/image/메인.jpg');
+background-size: cover;
+background-position: center;
+height:750px;
+padding-top:50px;
+}
+
+
+.menubg{
+
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:30px;
+    margin-right:20px;
+    border-radius: 20px;
+    height:400px;
+    width:700px;
+    color:white;
+    text-align:left;
+
+}
+
+
+  .btn-1, .btn-2, .btn-3, .btn-4{
+   `    flex: 1 1 auto;
+     margin:10px;
+      padding: 20px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size:20px;
+     font-weight:bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+
+  border-radius: 10px;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+
+ }
+
+
+.menu-1:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration:none;
+  color:orange;
+  filter: drop-shadow(4px 8px 8px white);
+}
+
+a{
+    text-decoration:none;
+}
+
+.display-1{
+    margin-top:20px;
+}
+
+.admingreet{
+    margin-top:10px;
+    font-size:60px;
+    font-weight:bold;
+}
+.managergreet{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.menus{
+margin-top:20px;
+ width:700px;
+ height:200px;
+ background-color: rgba(255,255,255,0.4);
+ border-radius:20px;
+ backdrop-filter: blur(10px);backdrop-filter: blur(10px);
+}
+.menu-1{
+ margin:auto;
+ color:white;
+}
+
+.laptop{
+    -webkit-animation:updown 2s infinite alternate;
+    animation:updown 2s infinite alternate;
+
+}
+
+#rightbg{
+    backgroud : blue;
+}
+
+
+@-webkit-keyframes updown{
+  to{
+    -webkit-transform:translateY(40px);
+            transform:translateY(40px);
+  }
+}
+
+@keyframes updown{
+  to{
+    -webkit-transform:translateY(40px);
+            transform:translateY(40px);
+  }
+}
+
+/*로그인 창*/
+
+.login_area{
+    border-radius:100%;
+            width:500px;
+            height:500px;
+     position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+   background-color: rgba(255,255,255,0.3);
+    margin:auto;
+    border : white padding:10px;
+      box-shadow: 0 5px 15px (244, 226, 0, 0.8);
+backdrop-filter: blur(10px);
+}
+
+
+.bgimage3{
+    position:absolute;
+    z-index:10;
+    top:150px;
+    right:150px;
+    -webkit-animation: myOrbit 8s linear infinite; /* Chrome, Safari 5 */
+         /*  -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+         /*    -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+         /*       animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(250px) rotate(360deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+}
+/*
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}*/
+
+
+.form-area{
+    z-index:5;
+    margin:auto;
+    position:absolute;
+    top:100px;
+    left:100px;
+    font-family:NeoDunggeunmo;
+    }
+
+.loginlogin{
+    margin:auto;
+    width:300px;
+    font-size:20px;
+
+}
+
+.logbutton{
+    width:300px;
+    font-size:15px;
+}
+
+
+.comment{
+ background-color: rgba(255,255,255,0.4);
+}
+
+/*  회원가입  */
+
+
+.signupbg{
+/*
+background: #673AB7;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url('/image/회원가입.jpg');
+background-size: cover;
+background-position: center;
+position:relative;
+height:750px;
+}
+
+
+.signupform{
+    background-color: rgba(255,255,255,0.3);
+        margin:auto;
+        border-radius:20px;
+        width:500px;
+        height:450px;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        backdrop-filter: blur(10px);
+}
+
+.sign_form{
+    margin:auto;
+    width:300px;
+    height:40px;
+    font-size:30px;
+    position:relative;
+}
+
+.signup_page{
+    height:600px;
+}
+
+.signupup{
+    padding-top:20px;
+    width:500px;
+    height:500px;
+    margin:auto;
+
+}
+
+
+.input-group-text{
+    font-size:15px;
+}
+
+.bgimage{
+    float:left;
+    position:relative;
+    margin-left:160px;
+}
+
+.bgimage2{
+    float:right;
+    position:relative;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+
+/*게시판*/
+.postbg{
+    margin:auto;
+    border-radius:20px;
+    box-shadow: 0 5px 15px (244, 226, 0, 0.8);
+    backdrop-filter: blur(10px);
+    color:white;
+    font-size:20px;
+}
+
+.tablebg, detailbg{
+background-image: url('/image/게시판.jpg');
+background-size: cover;
+background-position: center;
+height:750px;
+padding-top:50px;
+}
+
+.subject{
+    color:white;
+    text-shadow: 0 0 5px #ff0;
+    text-decoration:none;
+}
+
+.postbtn{
+        background: #4b6cb7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size:15px;
+        box-shadow: 2px 2px 6px #f58787;
+
+    }
+
+    /* 글작성*/
+
+ .writebg{
+
+       background-color: rgba(255,255,255,0.3);
+            margin:auto;
+            border-radius:20px;
+            width:1800px;
+            height:600px;
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            backdrop-filter: blur(10px);
+            position:fixed;
+ }
+.posting{
+    margin:auto;
+        left:0;
+            right:0;
+            top:0;
+            bottom:0;
+}

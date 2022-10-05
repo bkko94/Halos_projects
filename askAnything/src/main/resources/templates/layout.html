@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- AskAnything CSS -->
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+
     <title>Welcome!</title>
 </head>
+
 <body>
 <!-- 내비게이션 바 -->
 <nav th:replace="navbar :: navbarFragment"></nav>
@@ -20,5 +23,7 @@
 <script th:src="@{/bootstrap.min.js}"></script>
 <!-- 자바스크립트 Start -->
 <th:block layout:fragment="script"></th:block>
+
+
 </body>
 </html>

@@ -1,8 +1,9 @@
 <html lang="ko" xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
       xmlns:sec="http://www.w3.org/1999/xhtml">
-<nav th:fragment="navbarFragment" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<nav th:fragment="navbarFragment" class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/home_dark.png" width="30px" height="30px"></a>
+        <a class="navbar-brand" sec:authorize="isAnonymous()" th:href="@{/}"><span class="glyphicon glyphicon-home"></span></a>
+        <a class="navbar-brand" sec:authorize="isAuthenticated()" th:href="@{/user/main}"><span class="glyphicon glyphicon-home"></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -10,13 +11,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/post/list}">게시판</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" th:href="@{/user/signup}">회원가입</a>
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/signup}">회원가입</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" sec:authorize="hasAnyRole('ADMIN', 'MANAGER')" href="#">로그확인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" sec:authorize="hasAnyRole('MANAGER','USER')" th:href="@{/user/modify_pwd}">비밀번호 변경</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" sec:authorize="hasRole('ADMIN')" th:href="@{/user/list}">회원관리</a>
+                </li>
+                <li>
+                    <span th:if="${username != null}" th:text="${siteUser.getUsername()}"></span>
+                </li>
+
             </ul>
+            <div sec:authorize="isAuthenticated()" th:text="|${user}님, 환영합니다!|"><br> </div>
+                    <a class="btn btn-success" id="login" sec:authorize="isAnonymous()" th:href="@{/user/login}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1h-1z"/>
+                            <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                        </svg> 로그인</a>
+                    <a class="btn btn-success" id="logout" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1h-1z"/>
+                            <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                        </svg> 로그아웃</a>
         </div>
     </div>
 </nav>

@@ -24,8 +24,9 @@ public class Comment {
     @ManyToOne
     private Post post;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     private SiteUser author;
+
 
     private LocalDateTime modifyDate;
 

@@ -1,30 +1,39 @@
 <html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layout}">
-<div layout:fragment="content" class="container my-3">
-    <div class="my-3 border-bottom">
-        <div>
-            <h4>회원가입</h4>
+<div layout:fragment="content" class="container-fluid signupbg">
+
+    <div class="signup_page text-center">
+        <div class="laptop bgimage">
+            <img src="/image/girl.png" width="300px;" height="350px;">
+        </div>
+        <div class="signupform text-center">
+
+            <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
+                <h1 class="display-1">회원가입</h1>
+                                <span th:replace="form_errors :: formErrorsFragment"></span>
+
+                <div class="input-group mb-3 sign_form text-center">
+                    <span class="input-group-text"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" th:field="*{username}" class="form-control form-control-lg" placeholder="사용자ID 입력">
+                </div>
+                <div class="input-group mb-3 sign_form text-center">
+                    <span class="input-group-text"><span class="glyphicon glyphicon-lock"></span></span>
+                    <input type="password" th:field="*{password1}" class="form-control form-control-lg" placeholder="패스워드">
+                </div>
+                <div class="input-group mb-3 sign_form text-center">
+                    <span class="input-group-text"><span class="glyphicon glyphicon-chevron-right"></span></span>
+                    <input type="password" th:field="*{password2}" class="form-control form-control-lg" placeholder="패스워드 확인">
+                </div>
+                <div class="input-group mb-3 sign_form text-center">
+                    <span class="input-group-text"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input type="email" th:field="*{email}" class="form-control form-control-lg" placeholder="메일주소 입력">
+                </div>
+                <button type="submit" class="btn btn-primary logbutton" data-bs-toggle="modal" data-bs-target="#error">회원가입</button>
+            </form>
+        </div>
+        <div class="laptop bgimage2">
+            <img src="/image/phonegirl.png" width="600px;" height="600px;">
         </div>
     </div>
-    <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
-        <div th:replace="form_errors :: formErrorsFragment"></div>
-        <div class="mb-3">
-            <label for="username" class="form-label">사용자 ID</label>
-            <input type="text" th:field="*{username}" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">비밀번호</label>
-            <input type="password" th:field="*{password1}" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">비밀번호 확인</label>
-            <input type="password" th:field="*{password2}" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">이메일</label>
-            <input type="email" th:field="*{email}" class="form-control">
-        </div>
-        <button type="submit" class="btn btn-primary">회원가입</button>
-    </form>
 </div>
 
 </html>

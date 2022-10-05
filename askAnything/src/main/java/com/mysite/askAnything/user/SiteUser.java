@@ -2,12 +2,16 @@ package com.mysite.askAnything.user;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @Entity
+@DynamicInsert
 public class SiteUser {
 
     @Id
@@ -21,4 +25,13 @@ public class SiteUser {
 
     @Column(unique = true)
     private String email;
+
+
+    @Enumerated(EnumType.STRING)
+    private UserRole role;
+
+    private boolean enabled; /*계정 활성화 */
+
+    private LocalDateTime createDate;
+
 }

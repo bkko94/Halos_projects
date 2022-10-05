@@ -1,20 +1,33 @@
 <html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layout}">
-<div layout:fragment="content" class="container my-3">
+<div layout:fragment="content" class="container-fluid text-center loginbg">
+<div class="login_area">
     <form th:action="@{/user/login}" method="post">
+        <div class="bgimage3">
+            <img src="/image/planet.png" width="170px;" height="170px;">
+        </div>
+
         <div th:if="${param.error}">
             <div class="alert alert-danger">
                 사용자 ID 또는 비밀번호를 확인해주세요.
             </div>
         </div>
-        <div class="mb-3">
-            <label for="username" class="form-label">사용자ID</label>
-            <input type="text" name="username" id="username" class="form-control">
+
+
+        <div class="form-area text-center">
+            <h1 class="display-1 text-center";>로그인</h1>
+             <div class="input-group loginlogin mb-3">
+                 <span class="input-group-text"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" name="username" id="floatingInput" class="form-control form-control-lg" placeholder="사용자ID">
+             </div>
+
+            <div class="input-group loginlogin mb-3">
+                <span class="input-group-text"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" name="password" class="form-control form-control-lg" id="inputPassword" placeholder="비밀번호">
+            </div>
+             <button type="submit" class="btn btn-primary logbutton">로그인</button><br>
+             <a class="text-white" id="signup_form" th:href="@{/user/signup}">회원이 아니신가요?</a>
         </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">비밀번호</label>
-            <input type="password" name="password" class="form-control" id="password">
-        </div>
-        <button type="submit" class="btn btn-primary">로그인</button>
     </form>
+</div>
 </div>
 </html>

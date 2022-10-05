@@ -14,7 +14,10 @@ public class MainController {
 
     @RequestMapping("/")
     public String root(){
-        return "redirect:/post/list";
+        return "redirect:/user/login";
+      //  return "redirect:/user/login";
     }
+
+
 
 }
