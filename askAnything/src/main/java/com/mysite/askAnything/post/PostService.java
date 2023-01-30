@@ -88,6 +88,7 @@ public class PostService {
                         cb.like(a.get("content"), "%" + kw + "%"),
                         cb.like(u1.get("username"), "%" + kw + "%"),
                         cb.like(u2.get("username"), "%" + kw + "%"));
+               System.out.println("DDDDD");
             }
         };
     }
