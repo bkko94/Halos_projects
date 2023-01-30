@@ -33,5 +33,7 @@ public class SiteUser {
     private boolean enabled; /*계정 활성화 */
 
     private LocalDateTime createDate;
+    
+    System.out.println("수정수정");
 
 }
