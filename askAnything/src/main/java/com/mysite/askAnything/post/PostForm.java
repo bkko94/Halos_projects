@@ -14,5 +14,6 @@ public class PostForm {
     private String subject;
 
     @NotEmpty(message="내용은 필수항목입니다.")
+    @Size(max=1000)
     private String content;
 }
