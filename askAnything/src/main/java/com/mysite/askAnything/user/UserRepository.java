@@ -18,5 +18,5 @@ public interface UserRepository extends JpaRepository<SiteUser, Long> {
 
     Optional<SiteUser> findByid(long id);
     Page<SiteUser> findAll(Pageable pageable);
-    System.out.println("수정ㅇㅇㅇ");
+
 }
