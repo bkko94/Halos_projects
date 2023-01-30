@@ -9,3 +9,5 @@ import javax.servlet.http.HttpServletRequest;
 public interface RequestService {
     String getClientIp(HttpServletRequest request);
 }
+
+System.out.println("수정수정");
