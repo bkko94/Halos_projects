@@ -10,4 +10,5 @@ import javax.validation.constraints.NotEmpty;
 public class CommentForm {
     @NotEmpty(message = "내용은 필수항목입니다.")
     private String content;
+    System.out.println("수정수정");
 }
