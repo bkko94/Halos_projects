@@ -40,7 +40,7 @@ public class CommentController {
         log.info("사용자 [{}]님이 댓글 : '{}'을 작성했습니다.",principal.getName(),commentForm.getContent());
        return String.format("redirect:/post/detail/%s#comment_%s",
                comment.getPost().getId(), comment.getId(), comment.getId());
-
+        System.out.println("ddd");
    }
 
 
