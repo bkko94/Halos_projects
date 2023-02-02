@@ -13,7 +13,7 @@ public class PostForm {
     @Size(max=200)
     private String subject;
 
-    @NotEmpty(message="내용은 필수항목입니다ㅀㅇㅎㅇㅎㅇㅀ.")
+    @NotEmpty(message="내용은 필수항목입니다ㅀㅇㅎㅇfdstastrarewrwaeㅎㅇㅀ.")
     @Size(max=1500)
     private String content;
 }
